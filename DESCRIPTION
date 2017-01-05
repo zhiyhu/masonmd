@@ -1,0 +1,18 @@
+Package: masonmd
+Type: Package
+Title: Make Sense of Nonsense-Mediated Decay
+Version: 0.1.0
+Description: This package is used to annotate a mutation as an NMD-elicit
+    mutation or not. NMD-elicit mutations can activate the nonsense-mediated decay
+    pathway and degrade mutated mRNA.
+Authors@R: person("Zhiyuan", "Hu", email = "zhiyuan@well.ox.ac.uk", role = c("aut", "cre"))
+Maintainer: Zhiyuan Hu <zhiyuan@well.ox.ac.uk>
+Depends: R (>= 3.2)
+License: GPL-2
+LazyData: TRUE
+RoxygenNote: 5.0.1
+Imports:
+    Biostrings
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
