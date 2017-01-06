@@ -15,7 +15,14 @@ Herein, three rules are used to predict whether a PTC-generating mutation is NMD
 
 Using this methods, we can predict whether a called mutation will elicit NMD on the mRNA from the mutated gene, i.e. the NMD-elicit mutations. For now, this package can only be used for human genomes.
 
-## 2 Examples
+## 2 Installation instructions
+In the R or Rstudio, use the following codes to install the masonmd package.
+```{r install}
+install.packages(“devtools”)
+devtools::install_github("ZYBunnyHu/masonmd")
+```
+
+## 3 Examples
 This package is quite easy to use, with its main function classify.nmd. It reads in the information of called mutations/variants, and return the prediction results. The next two example mutations are from The Cancer Genome Atlas (TCGA).
 
 The first example is a substitution mutation on *AADAC* (Entrez ID = 13). The mutation happened on the 151545640 site on chromosome from G to T. The mutation is called on NCBI-build 37.
