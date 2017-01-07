@@ -1,7 +1,7 @@
 # R package masonmd: making sense of nonsense-mediated decay
 ==============
 
-Zhiyuan Hu
+Zhiyuan Hu, Wellcome Trust Centre for Human Genetics, University of Oxford
 
 2016-12-22
 
@@ -14,6 +14,10 @@ Herein, three rules are used to predict whether a PTC-generating mutation is NMD
 3. PTC is more than 200bp downstream of the start codon.
 
 Using these rules, we can predict whether a called mutation will elicit NMD on the mRNA from the mutated gene, i.e. the NMD-elicit mutations. For now, this package can only be used for human genomes.
+
+A manuscript detailing our work has been submitted for publication and a bioRxiv submission is in preparation:
+
+Z. Hu, C. Yau and A. Ahmed (2017) *A pan-cancer genome-wide analysis reveals tumour dependencies by induction of non-sense mediated decay* (Under review).
 
 ## 2 Installation instructions
 In R or Rstudio, use the following codes to install the masonmd package directly from Github:
