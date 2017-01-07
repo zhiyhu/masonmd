@@ -1,4 +1,4 @@
-# R package masonmd: making sense of nonsense-mediated decay
+#masonmd: making sense of nonsense-mediated decay
 ==============
 
 Zhiyuan Hu, Wellcome Trust Centre for Human Genetics, University of Oxford
@@ -6,11 +6,14 @@ Zhiyuan Hu, Wellcome Trust Centre for Human Genetics, University of Oxford
 2016-12-22
 
 ## 1 Background
-The package masonmd (**MA**ke **S**ense **O**f **NMD**) can be used to predict the effect of nonsense-mediated decay on mutated genes. While some mutations can introduce premature termination codons (PTCs) into genes, nonsense mediated decay (NMD) can detect these PTCs and then eliminate the abnormal transcripts. PTCs and NMD play important roles in genetic diseases and cancers.
+The R package *masonmd* (**MA**ke **S**ense **O**f **NMD**) can be used to predict the effect of nonsense-mediated decay on mutated genes. While some mutations can introduce premature termination codons (PTCs) into genes, nonsense mediated decay (NMD) can detect these PTCs and then eliminate the abnormal transcripts. PTCs and NMD play important roles in genetic diseases and cancers.
 
 Herein, three rules are used to predict whether a PTC-generating mutation is NMD-elicit or NMD-escape:
+
 1. PTC is more than 50-54bp upstream of the last-exon-exon junction.
+
 2. targeted gene is not intronless.
+
 3. PTC is more than 200bp downstream of the start codon.
 
 Using these rules, we can predict whether a called mutation will elicit NMD on the mRNA from the mutated gene, i.e. the NMD-elicit mutations. For now, this package can only be used for human genomes.
@@ -41,7 +44,9 @@ ref_nt = "G",mut_nt = "T")
 ```
 
 The first entry of the return object is `mut_nmd = F`, so it is not an NMD-elicit mutation. From the `note` and `have.ptc = T`. We know that the mutation caused a PTC but did not trigger NMD, because it does not fulfil the 50bp rule (Rule 1). The returned information also tells us:
+
 1. whether the wildtype transcript is effected by NMD (`wt_nmd`)
+
 2. and the relative position of PTC (`PTC.stop`), length of mutated coding sequence (`mutseq_length`), relative position of last exon-exon junction (`last_exon_exon_junction`) and number of exons (`n.exon`)
 
 This information gives the underlying prediction results.
