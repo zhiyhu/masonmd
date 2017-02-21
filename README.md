@@ -1,7 +1,7 @@
 #masonmd: making sense of nonsense-mediated decay
 ==============
 
-Zhiyuan Hu, Wellcome Trust Centre for Human Genetics, University of Oxford
+Zhiyuan Hu, Professor Ahmed Ashour Ahmed, Ovarian Cancer Cell Laboratory, Weatherall Institute of Molecular Medicine
 
 2016-12-22
 
