@@ -29,9 +29,9 @@ Herein, three rules are used to predict whether a PTC-generating mutation is NMD
 
 Using these rules, we can predict whether a called mutation will elicit NMD on the mRNA from the mutated gene, i.e. the NMD-elicit mutations. For now, this package can only be used for human genomes.
 
-A manuscript detailing our work has been submitted for publication and a bioRxiv submission is in preparation:
+A manuscript detailing our work has been accepted for publication:
 
-Z. Hu, C. Yau and A. Ahmed (2017) *A pan-cancer genome-wide analysis reveals tumour dependencies by induction of non-sense mediated decay* (Under review).
+Z. Hu, C. Yau and A. Ahmed (2017) *A pan-cancer genome-wide analysis reveals tumour dependencies by induction of non-sense mediated decay* (accepted).
 
 ## 2 Installation instructions
 In R or Rstudio, use the following codes to install the masonmd package directly from Github:
