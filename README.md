@@ -34,7 +34,7 @@ Using these rules, we can predict whether a called mutation will elicit NMD on t
 In R or Rstudio, use the following codes to install the masonmd package directly from Github:
 ```{r install}
 install.packages(“devtools”)
-devtools::install_github("ZYBunnyHu/masonmd")
+devtools::install_github("zhiyhu/masonmd")
 ```
 
 ## 3 Examples
